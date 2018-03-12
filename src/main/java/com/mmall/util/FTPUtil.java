@@ -10,9 +10,10 @@ import java.io.IOException;
 import java.util.List;
 
 /**
- * Created by gongkelvin on 2018/3/5.
+ * Created by geely
  */
 public class FTPUtil {
+
     private static  final Logger logger = LoggerFactory.getLogger(FTPUtil.class);
 
     private static String ftpIp = PropertiesUtil.getProperty("ftp.server.ip");

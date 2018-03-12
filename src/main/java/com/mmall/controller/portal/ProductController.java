@@ -11,11 +11,13 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 /**
- * Created by gongkelvin on 2018/3/5.
+ * Created by geely
  */
+
 @Controller
 @RequestMapping("/product/")
 public class ProductController {
+
     @Autowired
     private IProductService iProductService;
 
@@ -36,4 +38,9 @@ public class ProductController {
                                          @RequestParam(value = "orderBy",defaultValue = "") String orderBy){
         return iProductService.getProductByKeywordCategory(keyword,categoryId,pageNum,pageSize,orderBy);
     }
+
+
+
+
+
 }

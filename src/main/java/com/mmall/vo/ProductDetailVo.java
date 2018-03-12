@@ -3,11 +3,11 @@ package com.mmall.vo;
 import java.math.BigDecimal;
 
 /**
- * Created by gongkelvin on 2018/3/5.
+ * Created by geely
  */
 public class ProductDetailVo {
 
-    private Integer id;
+    private Integer  id;
     private Integer categoryId;
     private String name;
     private String subtitle;
@@ -20,9 +20,9 @@ public class ProductDetailVo {
     private String createTime;
     private String updateTime;
 
+
     private String imageHost;
     private Integer parentCategoryId;
-
 
     public Integer getId() {
         return id;
@@ -68,8 +68,8 @@ public class ProductDetailVo {
         return subImages;
     }
 
-    public void setSubImages(String sutImages) {
-        this.subImages = sutImages;
+    public void setSubImages(String subImages) {
+        this.subImages = subImages;
     }
 
     public String getDetail() {
@@ -135,7 +135,4 @@ public class ProductDetailVo {
     public void setParentCategoryId(Integer parentCategoryId) {
         this.parentCategoryId = parentCategoryId;
     }
-
-
-
 }
